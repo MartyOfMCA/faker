@@ -54,7 +54,7 @@ jobs:
           path: dist
 
   deploy:
-    needs: lint
+    needs: build
     runs-on: ubuntu-latest
 
     environment:
