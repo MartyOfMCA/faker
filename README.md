@@ -5,3 +5,6 @@ A project that helps users from diverse fields easily get fake data they can use
 - Easily copy fake data to clipboard.
 - Diverse categories to choose from.
 - Access to tons of dataset anytime.
+
+## Contribution
+Before contributing to faker, please read the instructions detailed in the [contribution guide](CONRIBUTING.md).
