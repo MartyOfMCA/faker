@@ -2,9 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" as="style" href="/src/main.jsx">
+    <meta name="description" content="A website to generate fake data for personal use.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <meta name="theme-color" id="theme-color" content="" />
+    <script>
+      const prefersDarkMode = matchMedia('(prefers-color-scheme: dark)').matches;
+      const themeColor = prefersDarkMode ? '#212529' : '#EDEDE9';
+      document.getElementById('theme-color').setAttribute('content', themeColor);
+    </script>
+    <title>Faker</title>
+    <style>
+      @media (prefers-color-scheme: light) {
+        body {
+          --bg-primary: #EDEDE9;
+          --bg-secondary: #FFF;
+          --accent: #7F5539;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          --bg-primary: #212529;
+          --bg-secondary: #343A40;
+          --accent: #FFF;
+        }
+      }
+
+      body {
+        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+      }
+
+      header {
+        background-color: var(--bg-secondary);
+      }
+
+      aside,
+      main,
+      footer {
+        background-color: var(--bg-secondary);
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
