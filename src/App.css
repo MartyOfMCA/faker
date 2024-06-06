@@ -2,3 +2,19 @@ button:focus svg,
 a:focus svg {
     filter: brightness(0.8);
 }
+
+.aside h2::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: .1rem;
+    margin-block-start: .5rem;
+    background-color: var(--bg-primary);
+}
+
+.categories {
+    scrollbar-width: none;
+}

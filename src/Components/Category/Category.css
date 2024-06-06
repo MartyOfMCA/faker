@@ -1,0 +1,25 @@
+.category,
+.category svg {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.category {
+    border: 1px solid var(--bg-primary);
+    background-color: var(--bg-primary);
+    transition-property: background-color;
+}
+
+.category svg {
+    transition-property: transform;
+    
+}
+
+.category:hover {
+    background-color: transparent;
+
+}
+
+.category:hover svg {
+    transform: scale(1.1);
+}
