@@ -1,0 +1,19 @@
+.data-item {
+    background-color: var(--bg-primary);
+}
+
+.data-item svg {
+    transition: transform 200ms ease-in-out;
+}
+
+.data-item:hover svg {
+    transform: scale(1.1) translateX(-10%);
+}
+
+.data-item .data-item-action {
+    transform: translateX(-10%) translateY(80%);
+}
+
+.data-item .data-item-action:focus {
+    transform: scale(1.1) translateX(-10%) translateY(80%);
+}
