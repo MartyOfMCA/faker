@@ -20,6 +20,10 @@
 
 }
 
-.category:hover svg {
+.category:focus svg {
     transform: scale(1.1);
+}
+
+.category:focus {
+    background-color: transparent;
 }
