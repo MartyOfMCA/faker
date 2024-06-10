@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import './DataItem.css';
 
+export const categoryReturnedAsObject = 'Airplanes';
+
 const DataItem = ({ value }) => {
   return (
     <section className="data-item relative pl-4 pr-7 py-2 rounded-md">
