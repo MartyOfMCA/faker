@@ -29,7 +29,7 @@ Project maintainers have the right and responsibility to remove, edit, or reject
 This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
 
 ## Enforcement
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at martyofmca@gmai.com. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by [contacting the project team](mailto:martyofmca@gmail.com). All complaints will be reviewed and investigated promptly and fairly.
 
 All project team members are obligated to respect the privacy and security of the reporter of any incident.
 
