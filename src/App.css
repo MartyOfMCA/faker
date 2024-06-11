@@ -18,3 +18,23 @@ a:focus svg {
 .categories {
     scrollbar-width: none;
 }
+
+body.dark {
+    --bg-primary: #212529;
+    --bg-secondary: #343A40;
+    --accent: #FFF;
+  }
+  
+  body.light {
+    --bg-primary: #EDEDE9;
+    --bg-secondary: #FFF;
+    --accent: #7F5539;
+  }
+
+  .theme-toggle-icon {
+    transition: opacity 200ms ease-in-out;
+  }
+
+  .theme-toggle-icon.hide {
+    opacity: 0;
+  }

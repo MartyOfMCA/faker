@@ -1,4 +1,4 @@
-import { categoryReturnedAsObject } from "../Components/DateItem/DataItem";
+import { categoryReturnedAsObject } from "../Utils";
 
 const isDataCached = (label, callbackSize) => sessionStorage.getItem(label)?.split(',').length >= callbackSize;
 
