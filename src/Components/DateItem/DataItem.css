@@ -6,14 +6,19 @@
     transition: transform 200ms ease-in-out;
 }
 
-.data-item:hover svg {
-    transform: scale(1.1) translateX(-10%);
+.data-item-action:hover,
+.data-item .data-item-action:focus {
+    background-color: var(--bg-secondary);
+    border: .01em solid var(--bg-primary);
 }
 
 .data-item .data-item-action {
-    transform: translateX(-10%) translateY(80%);
+    border-left: .01em solid var(--bg-secondary);
+    border-right: 0.1em solid var(--bg-primary);
+    transition: background-color 200ms ease-in-out;
 }
 
-.data-item .data-item-action:focus {
-    transform: scale(1.1) translateX(-10%) translateY(80%);
+.data-item .data-item-action:focus svg,
+.data-item .data-item-action:hover svg {
+    transform: scale(1.1);
 }
