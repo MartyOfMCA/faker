@@ -38,3 +38,22 @@ body.dark {
   .theme-toggle-icon.hide {
     opacity: 0;
   }
+
+  .notification-popup {
+    background-color: var(--accent);
+    color: var(--bg-secondary);
+    transition: opacity 200ms ease-in-out;
+  }
+
+  .notification-popup.hide {
+    opacity: 0;
+  }
+
+  .notification-popup button:hover svg,
+  .notification-popup button:focus svg {
+    --accent: var(--bg-secondary);
+  }
+
+  .notification-popup svg {
+    --accent: var(--bg-primary);
+  }

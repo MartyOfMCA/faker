@@ -134,6 +134,12 @@ const App = () => {
           </svg>
         </a>
       </footer>
+      <div className='notification-popup hide fixed top-24 right-3 -translate-y-2 px-2 py-2 rounded sm:right-12'>
+        <p className='mr-6'>Successfully copied to clipboard!</p>
+        <button className='absolute top-1/2 -translate-y-1/2 right-1' onClick={() => {
+          document.querySelector('.notification-popup').classList.add('hide');
+        }}><svg className='w-5 h-5' viewBox="0 0 30 30"><path d="M7.9785156 5.9804688 A 2.0002 2.0002 0 0 0 6.5859375 9.4140625L12.171875 15L6.5859375 20.585938 A 2.0002 2.0002 0 1 0 9.4140625 23.414062L15 17.828125L20.585938 23.414062 A 2.0002 2.0002 0 1 0 23.414062 20.585938L17.828125 15L23.414062 9.4140625 A 2.0002 2.0002 0 0 0 21.960938 5.9804688 A 2.0002 2.0002 0 0 0 20.585938 6.5859375L15 12.171875L9.4140625 6.5859375 A 2.0002 2.0002 0 0 0 7.9785156 5.9804688 z"/></svg></button>
+      </div>
     </>
   );
 }
