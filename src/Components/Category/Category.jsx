@@ -9,7 +9,7 @@ const Category = ({ icon, label, toolTip, trigger }) => {
 
   if (!icon || !label) return;
   return (
-    <button aria-label={label === 'CC' ? 'Credit Cards' : label} title={toolTip} className="category flex gap-1 items-center justify-start w-full px-4 py-2 rounded-full" onClick={fireTrigger}>
+    <button aria-label={label === 'CC' ? '(CC) Credit Cards' : label} title={toolTip} className="category flex gap-1 items-center justify-start w-full px-4 py-2 rounded-full" onClick={fireTrigger}>
         <span>{icon}</span>
         <span>{label}</span>
     </button>
