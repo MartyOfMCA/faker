@@ -112,7 +112,7 @@ const App = () => {
           <h2 className='self-center'>
             {
               selectedCategory
-              ? `Category selected is ${selectedCategory}.`
+              ? `Category selected is ${selectedCategory.toLowerCase()}.`
               : 'Waiting for a category to be selected'
             }
           </h2>
