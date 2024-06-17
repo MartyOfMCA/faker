@@ -4,7 +4,11 @@ const copyToClipBoard = (event) => {
     const textToCopy = currentTarget.parentElement.innerText;
 
     navigator.clipboard.writeText(textToCopy)
-    .then(() => { document.querySelector('.notification-popup').classList.remove('hide') });
+    .then(() => { 
+        const notification = document.querySelector('.notification-popup');
+        notification.classList.remove('hide');
+        notification.ariaHidden = false;
+    });
 };
 
 export default copyToClipBoard;
