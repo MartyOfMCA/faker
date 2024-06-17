@@ -102,11 +102,11 @@ const App = () => {
       <section className='flex flex-col my-10 mx-3 gap-10 items-start sm:flex-row sm:mx-12'>
         <aside aria-label='Sidebar full of categories' className='aside flex flex-col gap-5 items-center relative w-full px-2 py-5 rounded-lg sm:w-48'>
           <h2>Categories</h2>
-          <section className='categories flex gap-4 items-center w-full py-2 overflow-x-scroll sm:flex-col sm:overflow-hidden'>
+          <ul className='categories flex gap-4 items-center w-full py-2 overflow-x-scroll sm:flex-col sm:overflow-hidden'>
             {
               categories.map((category) => <Category key={category.label} icon={category.icon} label={category.label} toolTip={category.toolTip} trigger={handleCategoryClick}/>)
             }
-          </section>
+          </ul>
         </aside>
         <main className='flex flex-col gap-4 items-start w-full px-4 py-4 rounded-lg'>
           <h2 className='self-center'>
@@ -116,14 +116,14 @@ const App = () => {
               : 'Waiting for a category to be selected'
             }
           </h2>
-          <section className='flex flex-wrap gap-3 items-start'>
+          <ul className='flex flex-wrap gap-3 items-start'>
             {
               selectedCategory
               ? [...fetchData({...categories.find(category => category.label === selectedCategory)})]
               .map((item) => <DataItem key={item} value={item} />)
               : null
             }
-          </section>
+          </ul>
           <section className='notification-popup hide fixed top-24 right-3 -translate-y-2 px-2 py-2 rounded sm:right-12'>
             <p className='mr-6'>Successfully copied to clipboard!</p>
             <button aria-label='Close notification popup' title='Close notification popup' className='absolute top-1/2 -translate-y-1/2 right-1' onClick={() => {
