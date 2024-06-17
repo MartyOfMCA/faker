@@ -100,7 +100,7 @@ const App = () => {
         </button>
       </header>
       <section className='flex flex-col my-10 mx-3 gap-10 items-start sm:flex-row sm:mx-12'>
-        <aside aria-label='Sidebar full of categories' className='aside flex flex-col gap-5 items-center relative w-full px-2 py-5 rounded-lg sm:w-48'>
+        <aside aria-roledescription='Categories sidebar' className='aside flex flex-col gap-5 items-center relative w-full px-2 py-5 rounded-lg sm:w-48'>
           <h2>Categories</h2>
           <ul className='categories flex gap-4 items-center w-full py-2 overflow-x-scroll sm:flex-col sm:overflow-hidden'>
             {
