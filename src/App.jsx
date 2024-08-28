@@ -124,7 +124,7 @@ const App = () => {
               : null
             }
           </ul>
-          <section role='alert' aria-hidden='true' className='notification-popup  fixed top-24 right-3 -translate-y-2 px-2 py-2 rounded sm:right-12'>
+          <section role='alert' aria-hidden='true' className='notification-popup hide fixed top-24 right-3 -translate-y-2 px-2 py-2 rounded sm:right-12'>
             <p className='mr-6'>Successfully copied to clipboard!</p>
             <button aria-label='Close notification popup' title='Close notification popup' className='absolute top-1/2 -translate-y-1/2 right-1' onClick={() => {
               const notification = document.querySelector('.notification-popup');
